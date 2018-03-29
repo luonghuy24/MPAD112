@@ -31,7 +31,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'mongoid', '~> 6.2.0'
 gem 'kaminari-mongoid'
 gem 'rails_admin', '~> 1.3'
-gem 'rack-cors'
+gem 'rack-cors', :require => 'rack/cors'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
