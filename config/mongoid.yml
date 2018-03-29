@@ -149,8 +149,8 @@ production:
   clients:
     default:
       database: mpad112_production
-      # hosts:
-      #   - localhost:27017
+      hosts:
+        - localhost:27017
 
 test:
   clients:
