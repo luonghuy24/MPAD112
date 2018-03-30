@@ -4,7 +4,9 @@ class CoursesController < ApplicationController
   # GET /courses
   # GET /courses.json
   def index
-    @courses = Course.all
+    # @courses = Course.all
+    @courses = Course.all.group_by(&:semester).map{|k,v| {k: k, v: v}}
+    render json: @courses.to_json
   end
 
   # GET /courses/1
